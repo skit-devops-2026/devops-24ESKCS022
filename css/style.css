@@ -1,0 +1,374 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #050706;
+    color: white;
+}
+
+
+
+
+.container,
+.nav-container {
+    width: min(90%, 1200px);
+    margin: auto;
+}
+
+
+.navbar {
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    z-index: 100;
+
+    background-color: #050706;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.nav-container {
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.logo {
+    color: white;
+    text-decoration: none;
+
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #bef264;
+}
+
+
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    color: rgba(255, 255, 255, 0.75);
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #bef264;
+}
+
+
+
+
+.menu-btn {
+    display: none;
+
+    background: transparent;
+    color: white;
+
+    border: none;
+
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.mobile-menu {
+    display: none;
+
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 20px 5%;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobile-menu.active {
+    display: flex;
+}
+
+.mobile-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.hero {
+    min-height: 100vh;
+
+    padding-top: 180px;
+}
+
+
+.hero-tag {
+    color: #bef264;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 4px;
+
+    margin-bottom: 25px;
+}
+
+
+.hero-title {
+    font-size: clamp(70px, 10vw, 150px);
+
+    line-height: 0.9;
+
+    letter-spacing: -5px;
+}
+
+
+.hero-title span {
+    color: #bef264;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero {
+        padding-top: 140px;
+    }
+
+    .hero-title {
+        letter-spacing: -2px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .hero-title {
+        font-size: 65px;
+    }
+
+    .hero-tag {
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+
+}
+/* Events Page */
+
+.events-page {
+    min-height: 100vh;
+    padding: 160px 0 80px;
+}
+
+
+.page-tag {
+    color: #bef264;
+
+    font-size: 13px;
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 20px;
+}
+
+
+.page-title {
+    font-size: clamp(55px, 8vw, 110px);
+
+    line-height: 1;
+}
+
+
+.page-title span {
+    color: #bef264;
+}
+
+
+.page-description {
+    max-width: 600px;
+
+    margin-top: 30px;
+
+    color: rgba(255, 255, 255, 0.7);
+
+    font-size: 17px;
+
+    line-height: 1.7;
+}
+
+
+.events-section {
+    margin-top: 80px;
+}
+
+
+.events-section h2 {
+    font-size: 35px;
+}
+
+
+.events-container {
+    margin-top: 35px;
+}
+/* Events Grid */
+
+.events-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* Event Card */
+
+.event-card {
+    overflow: hidden;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    border-radius: 20px;
+
+    background-color: #0c120e;
+
+    transition: 0.3s;
+}
+
+
+.event-card:hover {
+    transform: translateY(-8px);
+
+    border-color: rgba(190, 242, 100, 0.5);
+}
+
+
+.event-image {
+    height: 180px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    color: #bef264;
+
+    background:
+        linear-gradient(
+            135deg,
+            #14261b,
+            #0a1710
+        );
+}
+
+
+.event-content {
+    padding: 25px;
+}
+
+
+.event-category {
+    color: #bef264;
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+}
+
+
+.event-content h3 {
+    margin-top: 15px;
+
+    font-size: 25px;
+}
+
+
+.event-info {
+    margin-top: 12px;
+
+    color: rgba(255, 255, 255, 0.65);
+
+    font-size: 14px;
+}
+
+
+.event-description {
+    margin-top: 15px;
+
+    line-height: 1.6;
+
+    color: rgba(255, 255, 255, 0.75);
+}
+
+
+.event-button {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    color: #bef264;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* Responsive Events */
+
+@media (max-width: 900px) {
+
+    .events-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .events-container {
+        grid-template-columns: 1fr;
+    }
+
+}
