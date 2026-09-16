@@ -1,23 +1,20 @@
-# <Project Name>
-
-> Replace every angle-bracket placeholder below. The hygiene check in CI will
-> fail until you do.
+# Campus Connect
 
 ## Author
 
 | Roll No. | Name | GitHub username |
 |---|---|---|
-| <roll> | <name> | <username> |
+| 24ESKCS022 | Aditya Sinha | sinhaadityacs-oss |
 
 ## About
 
-<Two or three sentences on what this application does.>
+Campus Connect is a web-based platform designed to help students discover campus events and stay connected with activities happening in their college. It provides a simple interface for viewing and accessing information about campus events.
 
 ## Tech stack
 
-- Frontend: <e.g. React>
-- Backend: <e.g. Node.js / Express>
-- Database: <e.g. PostgreSQL>
+- Frontend: HTML, CSS, JavaScript
+- Backend: None
+- Database: None
 
 ## Running locally
 
@@ -26,11 +23,3 @@ make install
 make run
 ```
 
-## Live URL
-
-<Add once M5 is done. Until then, leave as is.>
-
-## Health endpoint
-
-`GET /health` returns the running commit SHA. See `Makefile` and the milestone
-sheet for why this is required.
