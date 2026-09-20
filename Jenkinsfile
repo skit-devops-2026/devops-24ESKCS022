@@ -11,7 +11,7 @@ pipeline {
 
         stage('Test') {
             steps {
-                bat 'bash tests/test.sh'
+                bat '"C:\\Program Files\\Git\\usr\\bin\\bash.exe" tests/test.sh'
             }
         }
 
