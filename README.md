@@ -16,6 +16,13 @@ Campus Connect is a web-based platform designed to help students discover campus
 - Backend: None
 - Database: None
 
+## Project Structure
+
+- `index.html` - Home page
+- `events.html` - Events page
+- `css/` - CSS files
+- `js/` - JavaScript files
+
 ## Running locally
 
 ```bash
