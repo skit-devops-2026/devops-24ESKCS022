@@ -5,19 +5,19 @@ pipeline {
 
         stage('Install') {
             steps {
-                bat 'make install'
+                bat 'echo No external dependencies required for this frontend project.'
             }
         }
 
         stage('Test') {
             steps {
-                bat 'make test'
+                bat 'bash tests/test.sh'
             }
         }
 
         stage('Build') {
             steps {
-                bat 'make build'
+                bat 'echo Static HTML, CSS and JavaScript project - no build step required.'
             }
         }
 
