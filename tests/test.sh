@@ -59,6 +59,12 @@ else
     echo "FAIL: Mobile menu JavaScript is missing"
     failed=1
 fi
+if grep -q "Campus Connect" index.html; then
+    echo "PASS: Campus Connect title is present"
+else
+    echo "FAIL: Campus Connect title is missing"
+    failed=1
+fi
 
 if [ "$failed" -eq 0 ]; then
     echo "All tests passed."
