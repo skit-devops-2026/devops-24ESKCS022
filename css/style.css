@@ -116,6 +116,10 @@ body {
     text-decoration: none;
 }
 
+.mobile-menu a:hover {
+    color: #bef264;
+}
+
 
 
 .hero {
