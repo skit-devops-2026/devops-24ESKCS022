@@ -1,7 +1,9 @@
-
 services:
   web:
-    build: .
+    build:
+      context: .
+      args:
+        COMMIT_SHA: ${COMMIT_SHA:-local}
     image: aditya3214/campus-connect:1.0
     ports:
       - "8081:80"
