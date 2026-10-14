@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    image: aditya3214/campus-connect:1.0
+    ports:
+      - "8081:80"
+    restart: unless-stopped
