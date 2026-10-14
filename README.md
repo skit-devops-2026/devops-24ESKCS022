@@ -17,9 +17,13 @@ Campus Connect is a web-based platform designed to help students discover campus
 - Database: None
 ## Live Deployment
 
-Campus Connect is deployed using GitHub Pages.
+The application is deployed using GitHub Pages.
 
-**Live URL:** https://skit-devops-2026.github.io/devops-24ESKCS022/
+Live URL: https://skit-devops-2026.github.io/devops-24ESKCS022/
+
+## Docker Image
+
+Docker Hub image: `aditya3214/campus-connect:1.0`
 
 ## Monitoring
 
