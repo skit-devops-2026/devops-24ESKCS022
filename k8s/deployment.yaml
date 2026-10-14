@@ -1,0 +1,32 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: campus-connect
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: campus-connect
+  template:
+    metadata:
+      labels:
+        app: campus-connect
+    spec:
+      containers:
+        - name: campus-connect
+          image: aditya3214/campus-connect:1.0
+          ports:
+            - containerPort: 80
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 15
+            periodSeconds: 20
