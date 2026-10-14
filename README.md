@@ -15,6 +15,15 @@ Campus Connect is a web-based platform designed to help students discover campus
 - Frontend: HTML, CSS, JavaScript
 - Backend: None
 - Database: None
+## Live Deployment
+
+Campus Connect is deployed using GitHub Pages.
+
+**Live URL:** https://skit-devops-2026.github.io/devops-24ESKCS022/
+
+## Monitoring
+
+Prometheus and Blackbox Exporter monitor the website's HTTP availability. Grafana provides a dashboard for website availability, response time, and HTTP status code.
 
 ## Project Structure
 

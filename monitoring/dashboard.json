@@ -1,0 +1,43 @@
+
+{
+  "title": "Campus Connect Monitoring",
+  "description": "Prometheus HTTP availability monitoring for the deployed Campus Connect website",
+  "panels": [
+    {
+      "title": "Website Availability",
+      "type": "stat",
+      "targets": [
+        {
+          "expr": "probe_success{job=\"campus-connect-website\"}",
+          "legendFormat": "Campus Connect"
+        }
+      ],
+      "fieldConfig": {
+        "defaults": {
+          "min": 0,
+          "max": 1
+        }
+      }
+    },
+    {
+      "title": "HTTP Response Time",
+      "type": "timeseries",
+      "targets": [
+        {
+          "expr": "probe_duration_seconds{job=\"campus-connect-website\"}",
+          "legendFormat": "Response time"
+        }
+      ]
+    },
+    {
+      "title": "HTTP Status Code",
+      "type": "stat",
+      "targets": [
+        {
+          "expr": "probe_http_status_code{job=\"campus-connect-website\"}",
+          "legendFormat": "HTTP status"
+        }
+      ]
+    }
+  ]
+}
